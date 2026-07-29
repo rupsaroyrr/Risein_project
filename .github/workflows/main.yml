@@ -2,30 +2,54 @@ name: Stellar Project CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
 
 jobs:
-  build:
+  web-app:
+    name: Build & Test Web Application
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 20
-        cache: 'npm'
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Install dependencies
-      run: npm install
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
 
-    - name: Build
-      run: npm run build
-      env:
-        CI: false # Prevents warnings from failing the build
+      - name: Install Dependencies
+        run: npm install
 
-    - name: Test
-      run: npm test || true # Run tests if they exist, otherwise continue
+      - name: Run Frontend Tests
+        run: npm run test
+
+      - name: Build Web Application
+        run: npm run build
+        env:
+          CI: false
+
+  smart-contract:
+    name: Test Soroban Smart Contracts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: "TranscendenceContract -> target"
+
+      - name: Run Contract Tests
+        run: cargo test
+        working-directory: TranscendenceContract
