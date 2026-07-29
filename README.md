@@ -42,7 +42,7 @@ A decentralized payment terminal for the **Stellar Testnet** built with React + 
 | Technology | Purpose |
 |---|---|
 | [React 19](https://react.dev/) | UI framework |
-| [Vite 8](https://vitejs.dev/) | Build tool & dev server |
+| [Vite 5](https://vitejs.dev/) | Build tool & dev server |
 | [@stellar/stellar-sdk](https://www.npmjs.com/package/@stellar/stellar-sdk) | Stellar blockchain interactions |
 | [@stellar/freighter-api](https://www.npmjs.com/package/@stellar/freighter-api) | Freighter wallet integration |
 | [Horizon Testnet](https://horizon-testnet.stellar.org) | Stellar Testnet API endpoint |
@@ -267,8 +267,8 @@ The entire interface has been redesigned for accessibility on all device tiers:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Dark-97o/Stellar_Project.git
-cd Stellar_Project
+git clone https://github.com/rupsaroyrr/Risein_project.git
+cd Risein_project
 ```
 
 ### 2. Install Dependencies
