@@ -333,14 +333,14 @@ https://drive.google.com/file/d/1TMtH6YZkWBtc8QAT2ucJCJrwm96J1pH4/view?usp=shari
 
 | Resource | Address / Hash | Role |
 |---|---|---|
-| **Contract Address Relief Fund** | `CA2HLEFQOV7TITGBR2XYWMZ6OVPPJMOHLFJYMWIZPZ2AKWCHGEFHWYG5` | `Relief Fund Contract`|
-| **Transaction Hash** | `72fc0335e3b271d1e211295e63a1772a4345bd7414965f16e4207974255ad6cb` | `Relief Fund Contract Deployment Tx`|
-| **Contract Address NFT Standard** | `CAMRRPYB6WXPPSIFZJJZRUIQXE7GELBOZVJST56X5MF2MEYYZRSLM3ZJ` | `NFT Standard Contract`|
-| **Transaction Hash** | `ccf3e1264526c06b12b8957a7a3f61b51a6ec3913128da041cedc3768bb80f9d` | `NFT Standard Contract Deployment Tx`|
-| **Contract Address NFT Shop** | `CDUHM32DBT53G5XFNJS7JXXHCEHAFEC4IY52NR3THRG2XIFO3LZSEFIK` | `NFT Shop Contract`|
-| **Transaction Hash** | `0c6bf49cdad29a9bf9d2059f292f4e5e4f8e3613d897f2cf24ce4fc06a402367` | `NFT Shop Contract Deployment Tx`|
+| **Contract Address Relief Fund** | `CCYX4A425GKSSLBWD46OIFL7HVGDJPUUK74C2SFUIZG3WWOAA3DEOCM2` | `Relief Fund Contract`|
+| **Transaction Hash** | `27471426e2c3ca599e5ddc011396cb5da67f7f199b4143162a78ed08a5832cb0` | `Relief Fund Contract Deployment Tx`|
+| **Contract Address NFT Standard** | `CCXESEV3FJ7ZYRZHWTWBNT2R36I7MNSPGYPLBFASSOYGAEGN2DUIHYG4` | `NFT Standard Contract`|
+| **Transaction Hash** | `a6bfad8d4cba40e48e6b38ec424c8107da6cce984b83c7d03f613d418f15b73f` | `NFT Standard Contract Deployment Tx`|
+| **Contract Address NFT Shop** | `CBOYD2HUX6RNCGEIMU6BSKKI6EXVSUPHJODFM445XEMQOFT67GG3KLVA` | `NFT Shop Contract`|
+| **Transaction Hash** | `f5de81da2149d19d589025f558e9acb4cdae71481a2ff8fa858f088b1e0bba01` | `NFT Shop Contract Deployment Tx`|
 | **Native XLM Token ID** | `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC` | `Native XLM Token`|
-| `There is no separate Liquidity Pool (LP) contract deployed. Instead, the NFTShop contract acts as the primary treasury/escrow. All XLM from NFT purchases is held directly by the NFTShop contract ID (CDUH...FIK) to fund future buybacks and liquidations.` |
+| `There is no separate Liquidity Pool (LP) contract deployed. Instead, the NFTShop contract acts as the primary treasury/escrow. All XLM from NFT purchases is held directly by the NFTShop contract ID (CBOY...LVA) to fund future buybacks and liquidations.` |
 
 
 ---
