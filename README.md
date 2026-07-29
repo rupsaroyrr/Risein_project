@@ -2,9 +2,7 @@
 
 A decentralized payment terminal for the **Stellar Testnet** built with React + Vite. Connect your [Freighter wallet](https://www.freighter.app/), view your XLM balance, and send payments — all through a dystopian-themed terminal interface.
 
-# Live Demo Link: [Click Here](https://stellar-network-pgt.vercel.app/)
-
-<img width="1853" height="926" alt="Screenshot 2026-04-23 053232" src="https://github.com/user-attachments/assets/adb62079-26d5-46da-bbc7-b42955e9e07f" />
+# Live Demo Link: [Click Here](https://risein-project.vercel.app/)
 
 ---
 
@@ -309,90 +307,25 @@ The app will be available at **http://localhost:5173**
 
 ## 📸 Screenshots
 
-### Multi-Wallet Gateway
-
-<img width="1076" height="546" alt="Screenshot 2026-04-23 053319" src="https://github.com/user-attachments/assets/9df53590-bf40-4b6f-9677-8d53659a8370" />
-<br>
-<img width="741" height="891" alt="Screenshot 2026-04-23 053336" src="https://github.com/user-attachments/assets/96c53405-5fa3-431d-a61a-a92f9420da06" />
-
-### Wallet Connected State
-
-<img width="1139" height="764" alt="Screenshot 2026-04-23 053402" src="https://github.com/user-attachments/assets/f9105738-f3bd-48bc-95ed-50f1006c85fc" />
-
-
-### Balance Displayed
-
-<img width="444" height="417" alt="Screenshot 2026-04-23 053416" src="https://github.com/user-attachments/assets/06672069-c5d0-4c0b-9e8d-628609f0ef70" />
-
-
-### Successful Testnet Transaction
-
-<img width="1822" height="909" alt="Screenshot 2026-04-23 053511" src="https://github.com/user-attachments/assets/4b956ff4-cca5-48a3-933a-3f6e633d67d3" />
-
-
-### Transaction Result
-
-<img width="1323" height="161" alt="Screenshot 2026-04-23 053549" src="https://github.com/user-attachments/assets/61a363e2-153b-472c-b81a-5c979f4c29c4" />
-
-### Batch Transfer
-
-<img width="1473" height="931" alt="image" src="https://github.com/user-attachments/assets/5bdc0e6f-2219-4c39-aecf-19d83164eb2d" />
-
-### Split Bill
-
-<img width="1740" height="932" alt="image" src="https://github.com/user-attachments/assets/85193b60-f62f-4b0f-8c8e-8ba6c81eacbc" />
-
-### History
-
-<img width="1696" height="939" alt="image" src="https://github.com/user-attachments/assets/ef22916a-b0a2-4471-a5d0-c5d97a00ca26" />
-
-### Notifications
-
-<img width="1640" height="935" alt="image" src="https://github.com/user-attachments/assets/b33afc65-b8ad-42b2-a914-b81aac551a7d" />
-
-### Admin Diagnostics [Only Visible to Admin Account]
-
-<img width="1701" height="939" alt="image" src="https://github.com/user-attachments/assets/9d63361e-d100-40be-9b2d-3c992b01d5cb" />
-
-### NFT shop
-
-<img width="1689" height="952" alt="image" src="https://github.com/user-attachments/assets/f64427f3-6aee-45a3-94f4-d7e7291ec26c" />
-
-### Soroban Based Relief Fund
-
-<img width="1647" height="953" alt="image" src="https://github.com/user-attachments/assets/d25ce511-c0eb-4b32-8f74-1d56a7723950" />
-
-### XLM Leaderboard
-
-<img width="1604" height="947" alt="image" src="https://github.com/user-attachments/assets/d8e33d35-7529-4ad9-9671-f13de604e2b4" />
-
-### Terminal for Logs
-
-<img width="1646" height="922" alt="image" src="https://github.com/user-attachments/assets/1606e9b2-454e-4988-a813-201a8e1f9a30" />
 
 ### Test Cases Passed
 
-<img width="799" height="213" alt="Screenshot 2026-04-21 230226" src="https://github.com/user-attachments/assets/58871cb4-a8b0-4c67-9e1b-dae48466e966" />
+<img width="977" height="572" alt="image" src="https://github.com/user-attachments/assets/07797310-8842-4ee5-bf48-3d7feb9678bc" />
+
 
 ### Demo Video
 
-https://github.com/user-attachments/assets/0df2d724-17d5-4614-9918-5c0a46ce9572
+https://drive.google.com/file/d/1TMtH6YZkWBtc8QAT2ucJCJrwm96J1pH4/view?usp=sharing
 
 ### CI/CD Pipelines Deployed
-<img width="1847" height="953" alt="Screenshot 2026-04-23 050737" src="https://github.com/user-attachments/assets/670502c7-6e78-4fac-986b-a5683eccdebd" />
+
+<img width="1917" height="1082" alt="image" src="https://github.com/user-attachments/assets/fe8084ee-d266-4e6a-aa49-49c610c30fca" />
 
 
 ### Mobile Responsive View - Small Screens
 
-<img width="603" height="921" alt="Screenshot 2026-04-23 050115" src="https://github.com/user-attachments/assets/38d3bdef-68e6-4284-8be6-ff7a2677075c" />
+<img width="522" height="916" alt="image" src="https://github.com/user-attachments/assets/5e60d3e3-f164-4537-a944-428e9d81c51f" />
 
-### Deployment Environment
-
-<img width="1142" height="441" alt="Screenshot 2026-04-21 001619" src="https://github.com/user-attachments/assets/ac6b3b24-894f-4019-b10e-cdbada59ad70" />
-<br>
-<img width="1177" height="530" alt="Screenshot 2026-04-21 001601" src="https://github.com/user-attachments/assets/f5cf6b75-0aa2-4217-87d8-b571a8b72db7" />
-<br>
-<img width="1851" height="950" alt="Screenshot 2026-04-20 233857" src="https://github.com/user-attachments/assets/d7bf2631-e696-48d7-bdaf-ee462e8b4281" />
 
 ---
 
