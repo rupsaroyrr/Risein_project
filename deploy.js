@@ -28,7 +28,7 @@ async function deployAndInit() {
   }
 
   const kp = Keypair.fromSecret(secretKey);
-  const wasmPath = "./TranscendenceContract/target/wasm32v1-none/release/transcendence_contract.wasm";
+  const wasmPath = "./target/wasm32v1-none/release/transcendence_contract.wasm";
   
   if (!fs.existsSync(wasmPath)) {
     console.error(`❌ ERROR: WASM not found at ${wasmPath}. Run 'cargo build' first.`);

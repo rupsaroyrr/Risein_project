@@ -333,14 +333,14 @@ https://drive.google.com/file/d/1TMtH6YZkWBtc8QAT2ucJCJrwm96J1pH4/view?usp=shari
 
 | Resource | Address / Hash | Role |
 |---|---|---|
-| **Contract Address Relief Fund** | `CCYX4A425GKSSLBWD46OIFL7HVGDJPUUK74C2SFUIZG3WWOAA3DEOCM2` | `Relief Fund Contract`|
-| **Transaction Hash** | `27471426e2c3ca599e5ddc011396cb5da67f7f199b4143162a78ed08a5832cb0` | `Relief Fund Contract Deployment Tx`|
-| **Contract Address NFT Standard** | `CCXESEV3FJ7ZYRZHWTWBNT2R36I7MNSPGYPLBFASSOYGAEGN2DUIHYG4` | `NFT Standard Contract`|
-| **Transaction Hash** | `a6bfad8d4cba40e48e6b38ec424c8107da6cce984b83c7d03f613d418f15b73f` | `NFT Standard Contract Deployment Tx`|
-| **Contract Address NFT Shop** | `CBOYD2HUX6RNCGEIMU6BSKKI6EXVSUPHJODFM445XEMQOFT67GG3KLVA` | `NFT Shop Contract`|
-| **Transaction Hash** | `f5de81da2149d19d589025f558e9acb4cdae71481a2ff8fa858f088b1e0bba01` | `NFT Shop Contract Deployment Tx`|
+| **Contract Address Relief Fund** | `CB73TNAHPLIHS2FPCNCUERLDUEPA4QPYA2CSCSV6PFVZMSCI47ESKSLJ` | `Relief Fund Contract`|
+| **Transaction Hash** | `f3f66c85cb3cb514ce9a8c00d5e75dbbc731190650babecbf0c60e02f8172175` | `Relief Fund Contract Deployment Tx`|
+| **Contract Address NFT Standard** | `CCT5ZLD3XYI3SQMOAW5KSW3RIHFVMHLCLOQSLUPMBQR5BXXH5VMIDMZB` | `NFT Standard Contract`|
+| **Transaction Hash** | `81d3591cff70759f1309e9f02f34b9b78ff9a8ed8d1df69b3bf4168bfed7e5b5` | `NFT Standard Contract Deployment Tx`|
+| **Contract Address NFT Shop** | `CBW4ZRVEO3Q6J76HX7JY47H7WIJANZKNJPUQ2H2QS4ZO46DE6V4CTBJG` | `NFT Shop Contract`|
+| **Transaction Hash** | `19db10b9428efa473b03ecf79629c114f73639234f7666ea41d144951589e40d` | `NFT Shop Contract Deployment Tx`|
 | **Native XLM Token ID** | `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC` | `Native XLM Token`|
-| `There is no separate Liquidity Pool (LP) contract deployed. Instead, the NFTShop contract acts as the primary treasury/escrow. All XLM from NFT purchases is held directly by the NFTShop contract ID (CBOY...LVA) to fund future buybacks and liquidations.` |
+| `There is no separate Liquidity Pool (LP) contract deployed. Instead, the NFTShop contract acts as the primary treasury/escrow. All XLM from NFT purchases is held directly by the NFTShop contract ID (CBW4...CTBJG) to fund future buybacks and liquidations.` |
 
 
 ---
@@ -352,22 +352,27 @@ Stellar_Project/
 ├── .github/
 │   └── workflows/
 │       └── main.yml             # Enterprise CI/CD Pipeline
-├── TranscendenceContract/       # Soroban Workspace Root
-│   ├── contracts/
-│   │   ├── hello-world/         # Relief Fund Contract
-│   │   ├── nft-shop/            # Marketplace Contract (ICC)
-│   │   └── stellar-nft/         # NFT Standard Contract
-│   └── target/                  # Compiled WASM artifacts
+├── Cargo.toml                   # Root Soroban Workspace Manifest
+├── contracts/                   # Soroban Contracts Directory
+│   ├── transcendence-contract/  # Relief Fund Contract
+│   ├── nft-shop/                # Marketplace Contract (ICC)
+│   └── stellar-nft/             # NFT Standard Contract
 ├── public/
 │   ├── img/                     # Optimized Video & Image Assets
 │   └── favicon.svg              # System Icon
 ├── src/
+│   ├── stellar.js               # Primary Soroban & Stellar SDK Client
+│   ├── soroban.js               # Soroban SDK Proxy
+│   ├── contract.js              # Contract SDK Proxy
 │   ├── utils/
-│   │   ├── stellar.js           # Multi-tier Logic & SAC Queries
+│   │   ├── stellar.js           # Multi-tier UI Logic & SAC Queries
 │   │   └── kit.js               # Wallet Abstraction Layer
 │   ├── App.jsx                  # Primary React Controller & UI Routing
 │   ├── index.css                # Global Design System (Dystopian Theme)
 │   └── main.jsx                 # Application Bootstrap
+├── credentials.md               # Live Testnet Credentials & Hashes
+├── contracts.md                 # Contract Directory & Architecture Spec
+├── deploy.js                    # Deployment Protocol Script
 ├── index.html                   # Entry Structure
 ├── vite.config.js               # Build & Optimization Config
 └── README.md                    # Core Documentation
