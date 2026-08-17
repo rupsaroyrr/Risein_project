@@ -33,10 +33,17 @@ describe('filterHistory utility function', () => {
     expect(result.map(r => r.id)).toContain('3');
   });
 
-  it('should filter by search query and minimum amount combined', () => {
-    const result = filterHistory(mockHistory, 'txhash', '50');
-    expect(result).toHaveLength(1); // Only GA123456 (150 XLM) matches both
-    expect(result[0].id).toBe('1');
+  it('should filter by maximum XLM amount range', () => {
+    const result = filterHistory(mockHistory, '', '5', '30');
+    expect(result).toHaveLength(2); // 5.50 and 25.00
+    expect(result.map(r => r.id)).toContain('2');
+    expect(result.map(r => r.id)).toContain('3');
+  });
+
+  it('should filter by search query, min amount, and max amount combined', () => {
+    const result = filterHistory(mockHistory, ' txhash ', '10', '100');
+    expect(result).toHaveLength(1); // Only GC345678 (25 XLM)
+    expect(result[0].id).toBe('3');
   });
 
   it('should handle empty or null values gracefully', () => {
@@ -45,3 +52,4 @@ describe('filterHistory utility function', () => {
     expect(filterHistory([], 'abc', '10')).toEqual([]);
   });
 });
+
