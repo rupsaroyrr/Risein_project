@@ -56,8 +56,27 @@ This document tracks the official deployment addresses and transaction hashes fo
 
 ---
 
-## 4. Network Configuration
+## 4. Network Configuration & Fallback Nodes
 - **Network**: Stellar Testnet
-- **Horizon URL**: `https://horizon-testnet.stellar.org`
-- **Soroban RPC**: `https://soroban-testnet.stellar.org`
+- **Horizon Primary URL**: `https://horizon-testnet.stellar.org`
+- **Soroban RPC Primary**: `https://soroban-testnet.stellar.org`
+- **Soroban RPC Secondary**: `https://rpc-futurenet.stellar.org`
 - **Passphrase**: `Test SDF Network ; September 2015`
+
+---
+
+## 5. Contract Verification & Audit Checksums
+
+To verify WASM binary integrity on-chain, compare the compiled target output hash against the on-chain WASM hash using Soroban CLI:
+
+```bash
+# Inspect on-chain contract bytecode hash
+stellar contract inspect --id CB73TNAHPLIHS2FPCNCUERLDUEPA4QPYA2CSCSV6PFVZMSCI47ESKSLJ --rpc-url https://soroban-testnet.stellar.org --network testnet
+```
+
+| Contract | Target WASM Binary | Verification SHA-256 |
+| :--- | :--- | :--- |
+| **TranscendenceContract** | `target/wasm32-unknown-unknown/release/transcendence.wasm` | `0a09d7115baa8e9586a944790ad212b3f02d9b5b18a71e3d9b302a9b4c703497` |
+| **StellarNFT** | `target/wasm32-unknown-unknown/release/stellar_nft.wasm` | `ae79126fde2fcdfdc8ff2161fdd6c74a4833a63733ed63ac7bdd07c1beb84b16` |
+| **NFTShop** | `target/wasm32-unknown-unknown/release/nft_shop.wasm` | `f209e46f6659fbab870a6939ce43e1405b9c0b279083394f900e69e33e6fc5a2` |
+
