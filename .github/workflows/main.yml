@@ -47,9 +47,7 @@ jobs:
 
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
-        with:
-          workspaces: "TranscendenceContract -> target"
 
       - name: Run Contract Tests
         run: cargo test
-        working-directory: TranscendenceContract
+
