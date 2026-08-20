@@ -406,6 +406,25 @@ loadAccount() → buildTransaction() → signTransaction() → submitTransaction
 
 ---
 
+## 🧪 Automated Testing Suite
+
+The project includes an automated Vitest suite covering price calculations, oracle fallback behavior, filter utilities, and contract proxy export integrity.
+
+```bash
+# Run all unit test suites
+npm test
+
+# Run tests in watch mode during development
+npx vitest
+```
+
+### Test Coverage Highlights
+- **PriceService**: Real-time rate calculation, 30s TTL caching, CoinGecko fallback handling, string parsing, and cache invalidation.
+- **FilterHelper**: Range query filtering (`minAmt`, `maxAmt`), address/hash search query sanitization, and whitespace trimming.
+- **Contract Proxies**: Cross-module export signature validation for `src/contract.js` and `src/soroban.js`.
+
+---
+
 ## ⚠️ Important Notes
 
 - This app runs on the **Stellar Testnet** — no real funds are involved
@@ -431,3 +450,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 <p align="center">
   <b>Stellar Network Payment Terminal</b> — Built with ❤️ on the Stellar Testnet
 </p>
+
